@@ -1,0 +1,209 @@
+
+body{
+    
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+     margin: 0;
+    padding: 0;
+}
+.button_1{
+    height: 38px;
+    background: #e8419d;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+/*header**/
+
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8419d 3px solid;
+    
+}
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+        
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a{
+    color: #e8419d;
+    font-weight:bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/*showcase**/
+
+#showcase{
+    min-height: 400px;
+     background-image:url("../images/sch.png") ;
+	 background-size:100% 100% ;
+    text-align: center;
+    color: #fff;
+	background-repeat:no-repeat;
+}
+#showcase h1{
+    margin-top: 70px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+	
+}
+
+/*comments**/
+#Comments{
+    background: #35424a;
+    padding: 15px;
+    color: white;
+}
+#Comments h1{
+    float: left;
+}
+#Comments form{
+    float: right;
+    margin-top: 17px;
+}
+#Comments input[type="text"]{
+    height: 40px;
+    width: 250px;
+    padding: 4px;
+}
+
+/*boxes**/
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+#boxes .box img{
+    width: 90px;
+}
+.toggle-nav{
+    display: none;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #e8419d;
+    text-align: center;
+}
+
+
+/*media queries for tabs and ipads**/
+@media (min-width: 768px)and (max-width: 1024px)  {
+  header #branding,
+    header nav,
+    header nav li,
+    #comments h1,
+    #comments form,
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+         margin: 0;
+        margin-left: 0;
+        padding: 4px;
+       
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #comments button{
+        display: block;
+        width: 100%;
+    }
+    #comments form input[type="text"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .toggle-nav {
+padding:20px;
+float:left;
+display:inline-block;
+box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+border-radius:3px;
+background:#303030;
+text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+color:#777;
+font-size:20px;
+transition:color linear 0.15s;
+}
+.toggle-nav:hover, .toggle-nav.active {
+text-decoration:none;
+color:#66a992;
+}
+}
+/*media for phones**/
+@media (min-width: 320px) and (max-width: 480px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #comments h1,
+    #comments form,
+    #boxes .box,
+    #showcase h1{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #comments button{
+        display: block;
+        width: 100%;
+    }
+    #comments form input[type="text"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+  
+  
+}
